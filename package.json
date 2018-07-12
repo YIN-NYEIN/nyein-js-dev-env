@@ -18,7 +18,7 @@
   "author": "YIN-NYEIN",
   "license": "MIT",
   "dependencies": {
-    "babel-preset-latest": "^6.24.1"
+    "babel-preset-latest": "6.24.1"
   },
   "devDependencies": {
     "babel-cli": "6.16.0",
