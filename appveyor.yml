@@ -1,5 +1,4 @@
-environment:
-  matrix:
+matrix:
   #node.js
   -nodejs_version: "10"
 
