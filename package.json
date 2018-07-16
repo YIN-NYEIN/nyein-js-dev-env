@@ -13,11 +13,13 @@
     "share": "npm-run-all --parallel open:src localtunnel",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
+
   },
   "author": "YIN-NYEIN",
   "license": "MIT",
   "dependencies": {
     "babel-preset-latest": "6.24.1",
+    "file-system": "2.2.2",
     "whatwg-fetch": "2.0.4"
   },
   "devDependencies": {

@@ -1,7 +1,8 @@
 import './index.css';
+//var promise = import('./index.css');
 
-//import {getUsers} from './api/userApi';
-var getUsers = require('./src/api/userApi');
+import {getUsers} from './api/userApi.js';
+//var getUsers = require('./api/userApi.js');
 
 
 // Populate table of users via API call.
@@ -19,4 +20,18 @@ getUsers().then(result => {
   });
 
   global.document.getElementById('users').innerHTML = usersBody
+//});
+  const deleteLinks = global.document.getElementsByClassName('deleteUser');
+
+  // Must use array.from to create a real array from a DOM collection
+  // getElementsByClassname only returns an "array like" object
+  Array.from(deleteLinks, link => {
+    link.onclick = function(event) {
+      const element = event.target;
+      event.preventDefault();
+      deleteUser(element.attributes["data-id"].value);
+      const row = element.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    };
+  });
 });

@@ -6,7 +6,7 @@ const path = require ('path');
   devtool: 'inline-source-map',
   cache: false,
   entry: [
-    path.resolve(__dirname, './index.js')
+    path.resolve(__dirname, 'index.js')
   ],
   target: 'web',
   output: {

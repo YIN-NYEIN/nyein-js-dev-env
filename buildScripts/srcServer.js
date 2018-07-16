@@ -6,7 +6,7 @@ const path = require ('path');
 const open = require ('open');
 const webpack = require ('webpack');
 //const config = require ('config');
-const config = require('../src/webpack.config.dev.js');
+const config = require('/Users/administrator/Documents/YNT/nyein-js-dev-env/src/webpack.config.dev.js');
 const port = 3000;
 
 
