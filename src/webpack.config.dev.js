@@ -1,12 +1,14 @@
 const path = require ('path');
 
+
  module.exports= {
   mode: 'production',
   bail: true,
   devtool: 'inline-source-map',
   cache: false,
   entry: [
-    path.resolve(__dirname, 'index.js')
+   path.resolve(__dirname, './index.js')
+
   ],
   target: 'web',
   output: {
@@ -18,6 +20,9 @@ const path = require ('path');
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use:[ {loader: 'babel-loader'}],
+
         test: /\.css$/,
         use: [
           { loader: 'style-loader' },

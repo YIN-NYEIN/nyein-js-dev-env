@@ -1,7 +1,7 @@
 var chai = require('chai')
 var expect = chai.expect
 var jsdom = require ('jsdom');
-//var fs = require('file-system');
+var fs = require('file-system');
 var fs = require('fs');
 
 describe ('Our first test', () => {
